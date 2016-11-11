@@ -1,5 +1,5 @@
 {
-  "name": "rolice/econt",
+  "name": "simexis/econt",
   "description": "Econt courier API integration in composer package",
   "type": "library",
   "version": "1.0",
