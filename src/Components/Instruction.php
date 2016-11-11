@@ -1,10 +1,10 @@
 <?php
-namespace Rolice\Econt\Components;
+namespace Simexis\Econt\Components;
 
 /**
  * Class Instruction
  * Class representing single instruction for loading in courier service
- * @package Rolice\Econt\Component
+ * @package Simexis\Econt\Component
  * @version 0.1a
  * @access public
  * @todo Very basic instruction class only used for return address, for payment of failed delivery.

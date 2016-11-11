@@ -1,5 +1,5 @@
 <?php
-namespace Rolice\Econt\Exceptions;
+namespace Simexis\Econt\Exceptions;
 
 use Exception;
 

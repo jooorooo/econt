@@ -1,11 +1,11 @@
 <?php
-namespace Rolice\Econt\Models;
+namespace Simexis\Econt\Models;
 
 use Config;
 
 use Illuminate\Database\Eloquent\Model;
-use Rolice\Econt\Exceptions\EcontException;
-use Rolice\Econt\ImportInterface;
+use Simexis\Econt\Exceptions\EcontException;
+use Simexis\Econt\ImportInterface;
 
 class Office extends Model implements ImportInterface
 {
@@ -59,17 +59,17 @@ class Office extends Model implements ImportInterface
 
     public function settlement()
     {
-        return $this->belongsTo('Rolice\Econt\Models\Settlement', 'city_id');
+        return $this->belongsTo('Simexis\Econt\Models\Settlement', 'city_id');
     }
 
     public function neighbourhood()
     {
-        $this->belongsTo('Rolice\Econt\Models\Neighbourhood');
+        $this->belongsTo('Simexis\Econt\Models\Neighbourhood');
     }
 
     public function street()
     {
-        $this->belongsTo('Rolice\Econt\Models\Street');
+        $this->belongsTo('Simexis\Econt\Models\Street');
     }
 
     public function validateImport(array $data)

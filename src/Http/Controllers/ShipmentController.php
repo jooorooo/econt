@@ -1,5 +1,5 @@
 <?php
-namespace Rolice\Econt\Http\Controllers;
+namespace Simexis\Econt\Http\Controllers;
 
 use App;
 use Lang;

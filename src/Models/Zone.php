@@ -1,11 +1,11 @@
 <?php
-namespace Rolice\Econt\Models;
+namespace Simexis\Econt\Models;
 
 use Config;
 
 use Illuminate\Database\Eloquent\Model;
-use Rolice\Econt\Exceptions\EcontException;
-use Rolice\Econt\ImportInterface;
+use Simexis\Econt\Exceptions\EcontException;
+use Simexis\Econt\ImportInterface;
 
 class Zone extends Model implements ImportInterface
 {

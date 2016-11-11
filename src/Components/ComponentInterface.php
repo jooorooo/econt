@@ -1,12 +1,12 @@
 <?php
-namespace Rolice\Econt\Components;
+namespace Simexis\Econt\Components;
 
 use SimpleXMLElement;
 
 /**
  * Interface ComponentInterface
  * Defines serialization mechanisms for communication with Econt end-points
- * @package Rolice\Econt\Components
+ * @package Simexis\Econt\Components
  * @version 1.0
  */
 interface ComponentInterface {

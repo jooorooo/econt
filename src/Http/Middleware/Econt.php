@@ -1,5 +1,5 @@
 <?php
-namespace Rolice\Econt\Http\Middleware;
+namespace Simexis\Econt\Http\Middleware;
 
 use App;
 use Input;

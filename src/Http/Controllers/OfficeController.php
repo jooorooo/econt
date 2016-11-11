@@ -1,13 +1,13 @@
 <?php
-namespace Rolice\Econt\Http\Controllers;
+namespace Simexis\Econt\Http\Controllers;
 
 use App;
 use Input;
 
 use App\Http\Controllers\Controller;
-use Rolice\Econt\Models\Office;
-use Rolice\Econt\Helpers\Locale;
-use Rolice\Econt\Models\Settlement;
+use Simexis\Econt\Models\Office;
+use Simexis\Econt\Helpers\Locale;
+use Simexis\Econt\Models\Settlement;
 
 class OfficeController extends Controller
 {

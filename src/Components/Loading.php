@@ -1,10 +1,10 @@
 <?php
-namespace Rolice\Econt\Components;
+namespace Simexis\Econt\Components;
 
 /**
  * Class Loading
  * Class representing single load for courier service
- * @package Rolice\Econt\Component
+ * @package Simexis\Econt\Component
  * @version 0.7
  * @access public
  */

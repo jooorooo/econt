@@ -1,5 +1,5 @@
 <?php
-namespace Rolice\Econt\Helpers;
+namespace Simexis\Econt\Helpers;
 
 use App;
 

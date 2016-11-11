@@ -1,12 +1,12 @@
 <?php
-namespace Rolice\Econt\Http\Controllers;
+namespace Simexis\Econt\Http\Controllers;
 
 use App;
 use Lang;
 use Input;
 
 use App\Http\Controllers\Controller;
-use Rolice\Econt\Models\Settlement;
+use Simexis\Econt\Models\Settlement;
 
 class SettlementController extends Controller
 {

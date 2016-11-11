@@ -1,21 +1,21 @@
 <?php
-namespace Rolice\Econt;
+namespace Simexis\Econt;
 
 use App;
 
 use rest\server\user\Load;
-use Rolice\Econt\Components\Loading;
-use Rolice\Econt\Components\Sender;
-use Rolice\Econt\Components\Receiver;
-use Rolice\Econt\Components\Shipment;
-use Rolice\Econt\Components\Payment;
-use Rolice\Econt\Components\Services;
-use Rolice\Econt\Exceptions\EcontException;
+use Simexis\Econt\Components\Loading;
+use Simexis\Econt\Components\Sender;
+use Simexis\Econt\Components\Receiver;
+use Simexis\Econt\Components\Shipment;
+use Simexis\Econt\Components\Payment;
+use Simexis\Econt\Components\Services;
+use Simexis\Econt\Exceptions\EcontException;
 
 /**
  * Class Waybill
  * Interface exported by this package to allow creating/issuing new Econt waybills for printing.
- * @package Rolice\Econt
+ * @package Simexis\Econt
  * @version 1.0
  * @access public
  */

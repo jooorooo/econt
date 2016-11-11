@@ -1,5 +1,5 @@
 <?php
-namespace Rolice\Econt\Http\Requests;
+namespace Simexis\Econt\Http\Requests;
 
 use Lang;
 use Input;

@@ -1,12 +1,12 @@
 <?php
-namespace Rolice\Econt;
+namespace Simexis\Econt;
 
-use Rolice\Econt\Exceptions\EcontException;
+use Simexis\Econt\Exceptions\EcontException;
 
 /**
  * Class Endpoint
  * Class with constants, providing end-point addresses to Econt services.
- * @package Rolice\Econt
+ * @package Simexis\Econt
  * @version 1.0
  * @access public
  */

@@ -1,5 +1,5 @@
 <?php
-namespace Rolice\Econt\Components;
+namespace Simexis\Econt\Components;
 
 class Shipment implements ComponentInterface
 {

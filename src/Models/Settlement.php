@@ -1,12 +1,12 @@
 <?php
-namespace Rolice\Econt\Models;
+namespace Simexis\Econt\Models;
 
 use App;
 use Config;
 use Illuminate\Database\Eloquent\Model;
 use Lang;
-use Rolice\Econt\Exceptions\EcontException;
-use Rolice\Econt\ImportInterface;
+use Simexis\Econt\Exceptions\EcontException;
+use Simexis\Econt\ImportInterface;
 
 class Settlement extends Model implements ImportInterface
 {
@@ -60,17 +60,17 @@ class Settlement extends Model implements ImportInterface
 
     public function country()
     {
-        return $this->belongsTo('Rolice\Econt\Models\Settlement', 'country_id');
+        return $this->belongsTo('Simexis\Econt\Models\Settlement', 'country_id');
     }
 
     public function neighbourhoods()
     {
-        return $this->hasMany('Rolice\Econt\Models\Neighbourhoods', 'city_id');
+        return $this->hasMany('Simexis\Econt\Models\Neighbourhoods', 'city_id');
     }
 
     public function dispatching()
     {
-        $this->hasMany('Rolice\Econt\Models\Dispatching');
+        $this->hasMany('Simexis\Econt\Models\Dispatching');
     }
 
     public function validateImport(array $data)

@@ -1,12 +1,12 @@
 <?php
-namespace Rolice\Econt;
+namespace Simexis\Econt;
 
-use Rolice\Econt\Exceptions\EcontException;
+use Simexis\Econt\Exceptions\EcontException;
 
 /**
  * Class RequestType
  * Class with constants, providing valid, predefined Econt request types.
- * @package Rolice\Econt
+ * @package Simexis\Econt
  * @version 1.0
  * @access public
  */

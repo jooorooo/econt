@@ -1,11 +1,11 @@
 <?php
-namespace Rolice\Econt\Models;
+namespace Simexis\Econt\Models;
 
 use Config;
 
 use Illuminate\Database\Eloquent\Model;
-use Rolice\Econt\Exceptions\EcontException;
-use Rolice\Econt\ImportInterface;
+use Simexis\Econt\Exceptions\EcontException;
+use Simexis\Econt\ImportInterface;
 
 class Dispatching extends Model implements ImportInterface
 {
@@ -68,7 +68,7 @@ class Dispatching extends Model implements ImportInterface
     }
 
     public function settlement() {
-        return $this->belongsTo('Rolice\Econt\Models\Settlement');
+        return $this->belongsTo('Simexis\Econt\Models\Settlement');
     }
 
     public function validateImport(array $data)

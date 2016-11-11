@@ -1,13 +1,13 @@
 <?php
-namespace Rolice\Econt\Components;
+namespace Simexis\Econt\Components;
 
 use DateTime;
-use Rolice\Econt\Exceptions\EcontException;
+use Simexis\Econt\Exceptions\EcontException;
 
 /**
  * Class CourierRequest
  * Class representing courier request segment of loading request
- * @package Rolice\Econt\Component
+ * @package Simexis\Econt\Component
  * @version 1.0
  * @access public
  */

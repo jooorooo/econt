@@ -1,16 +1,16 @@
 <?php
-namespace Rolice\Econt\Commands;
+namespace Simexis\Econt\Commands;
 
 use App;
 use DB;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
-use Rolice\Econt\Models\Neighbourhood;
-use Rolice\Econt\Models\Office;
-use Rolice\Econt\Models\Region;
-use Rolice\Econt\Models\Settlement;
-use Rolice\Econt\Models\Street;
-use Rolice\Econt\Models\Zone;
+use Simexis\Econt\Models\Neighbourhood;
+use Simexis\Econt\Models\Office;
+use Simexis\Econt\Models\Region;
+use Simexis\Econt\Models\Settlement;
+use Simexis\Econt\Models\Street;
+use Simexis\Econt\Models\Zone;
 
 class Sync extends Command
 {

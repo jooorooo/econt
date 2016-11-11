@@ -1,26 +1,26 @@
 <?php
-namespace Rolice\Econt\Http\Controllers;
+namespace Simexis\Econt\Http\Controllers;
 
 use App;
 use App\Http\Controllers\Controller;
 use DateTime;
 use Input;
 use League\Flysystem\Exception;
-use Rolice\Econt\Components\CourierRequest;
-use Rolice\Econt\Components\Instruction;
-use Rolice\Econt\Components\Loading;
-use Rolice\Econt\Components\Payment;
-use Rolice\Econt\Components\Receiver;
-use Rolice\Econt\Components\Sender;
-use Rolice\Econt\Components\Services;
-use Rolice\Econt\Components\Shipment;
-use Rolice\Econt\Exceptions\EcontException;
-use Rolice\Econt\Http\Requests\CalculateRequest;
-use Rolice\Econt\Http\Requests\WaybillRequest;
-use Rolice\Econt\Models\Office;
-use Rolice\Econt\Models\Settlement;
-use Rolice\Econt\Models\Street;
-use Rolice\Econt\Waybill;
+use Simexis\Econt\Components\CourierRequest;
+use Simexis\Econt\Components\Instruction;
+use Simexis\Econt\Components\Loading;
+use Simexis\Econt\Components\Payment;
+use Simexis\Econt\Components\Receiver;
+use Simexis\Econt\Components\Sender;
+use Simexis\Econt\Components\Services;
+use Simexis\Econt\Components\Shipment;
+use Simexis\Econt\Exceptions\EcontException;
+use Simexis\Econt\Http\Requests\CalculateRequest;
+use Simexis\Econt\Http\Requests\WaybillRequest;
+use Simexis\Econt\Models\Office;
+use Simexis\Econt\Models\Settlement;
+use Simexis\Econt\Models\Street;
+use Simexis\Econt\Waybill;
 
 class WaybillController extends Controller
 {
@@ -255,7 +255,7 @@ class WaybillController extends Controller
         $oc = (float)Input::get('services.oc');
         $oc_currency = Input::get('services.oc_currency');
         $cd_currency = Input::get('services.cd_currency');
-
+		$cd_agreement_num = Input::get('services.cd_agreement_num');
 
         $services = new Services;
         $services->dp = $dp ? 'ON' : null;
@@ -265,6 +265,8 @@ class WaybillController extends Controller
 
         $services->cd = 0 < $cd && preg_match('#[A-Z]{3}#', $cd_currency) ? $cd : null;
         $services->cd_currency = 0 < $cd && preg_match('#[A-Z]{3}#', $cd_currency) ? $cd_currency : null;
+		
+		$services->cd_agreement_num = $cd_agreement_num;
 
         return $services;
     }

@@ -1,10 +1,10 @@
 <?php
-namespace Rolice\Econt\Components;
+namespace Simexis\Econt\Components;
 
 /**
  * Class Side
  * Legal side on courier service, used for senders, receivers and 3rd-party sides
- * @package Rolice\Econt\Component
+ * @package Simexis\Econt\Component
  * @version 1.0
  * @access public
  */

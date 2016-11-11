@@ -22,14 +22,14 @@
   },
   "autoload": {
     "psr-4": {
-      "Rolice\\Econt\\": "src",
-      "Rolice\\Econt\\Models\\": "src/Models/",
-      "Rolice\\Econt\\Commands\\": "src/Commands/",
-      "Rolice\\Econt\\Components\\": "src/Components/",
-      "Rolice\\Econt\\Exceptions\\": "src/Exceptions/"
+      "Simexis\\Econt\\": "src",
+      "Simexis\\Econt\\Models\\": "src/Models/",
+      "Simexis\\Econt\\Commands\\": "src/Commands/",
+      "Simexis\\Econt\\Components\\": "src/Components/",
+      "Simexis\\Econt\\Exceptions\\": "src/Exceptions/"
     }
   },
   "autoload-dev": {
-    "psr-4": { "Rolice\\Econt\\Test\\": "tests/" }
+    "psr-4": { "Simexis\\Econt\\Test\\": "tests/" }
   }
 }

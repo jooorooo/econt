@@ -1,19 +1,19 @@
 <?php
-namespace Rolice\Econt\Http\Controllers;
+namespace Simexis\Econt\Http\Controllers;
 
 use Input;
 
 use App\Http\Controllers\Controller;
-use Rolice\Econt\Components\Loading;
-use Rolice\Econt\Components\Receiver;
-use Rolice\Econt\Components\Sender;
-use Rolice\Econt\Econt;
-use Rolice\Econt\Models\Neighbourhood;
-use Rolice\Econt\Models\Office;
-use Rolice\Econt\Models\Settlement;
-use Rolice\Econt\Models\Street;
-use Rolice\Econt\Models\Zone;
-use Rolice\Econt\Waybill;
+use Simexis\Econt\Components\Loading;
+use Simexis\Econt\Components\Receiver;
+use Simexis\Econt\Components\Sender;
+use Simexis\Econt\Econt;
+use Simexis\Econt\Models\Neighbourhood;
+use Simexis\Econt\Models\Office;
+use Simexis\Econt\Models\Settlement;
+use Simexis\Econt\Models\Street;
+use Simexis\Econt\Models\Zone;
+use Simexis\Econt\Waybill;
 
 class EcontController extends Controller
 {
